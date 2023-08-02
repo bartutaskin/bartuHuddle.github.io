@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    background-image: url('images/bg-desktop.svg');
+    background-position: center;
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+p {
+    color: #fff;
+    line-height: 1.6;
+    margin: 25px 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 35px 0;
+    color: #fff;
+}
+
+.logo i {
+    padding-right: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    position: relative;
+    top: 100px;
+}
+
+.card {
+    width: 450px;
+    justify-self: center;
+    margin: auto 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: hsl(300, 69%, 71%);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 55px;
+    margin-top: 15px;
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    transition: color 0.5s ease-in-out;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+
+}
+
+.social {
+    position: absolute;
+    bottom: 70px;
+    right: 70px;
+}
+
+.social i {
+    font-size: 24px;
+    color: #fff;
+    padding-left: 25px;
+}
+
+.social i::after {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top: 15px;
+    right: 38px;
+}
+
+@media(max-width:768px) {
+    body {
+        background-image: url('images/bg-mobile.svg');
+        background-position: center;
+        background-color: hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    img {
+        width: 350px;
+        margin: 0 auto;
+        padding-bottom: 35px;
+    }
+
+    p {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 35px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        top: 0;
+    }
+
+    .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .social {
+        position: absolute;
+        bottom: 50px;
+        right: 20px;
+        left: 60px;
+    }
+
+
+}
