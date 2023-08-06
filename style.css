@@ -87,6 +87,35 @@ a {
 }
 
 .social {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    position: absolute;
+    bottom: 150px;
+    right: 350px;
+}
+
+.social a {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i {
+    font-size: 22px;
+}
+
+.social a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* .social {
     position: absolute;
     bottom: 70px;
     right: 70px;
@@ -108,7 +137,7 @@ a {
     border-radius: 50%;
     top: 15px;
     right: 38px;
-}
+} */
 
 @media(max-width:768px) {
     body {
@@ -117,48 +146,62 @@ a {
         background-color: hsl(257, 40%, 49%);
         background-repeat: no-repeat;
         background-size: cover;
+
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     img {
-        width: 350px;
+        width: 300px;
         margin: 0 auto;
-        padding-bottom: 35px;
+        padding-bottom: 25px;
     }
 
     p {
+        font-size: 14px;
         margin: 0;
         padding: 10px 0;
     }
 
     .container {
-        width: 100%;
+        width: 400px;
+        height: 100%;
         text-align: center;
+        position: relative;
     }
 
     .logo {
-        padding: 35px;
+        padding: 25px;
     }
 
     .grid {
         grid-template-columns: 1fr;
-        gap: 10px;
-        top: 0;
+        gap: 0;
+        width: 300px;
+        padding: 0 15px;
+        position: absolute;
     }
 
     .card {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
     .social {
+        width: 200px;
         position: absolute;
         bottom: 50px;
-        right: 20px;
-        left: 60px;
+        right: 130px;
+    }
+
+
+
+    .btn {
+        margin: 0;
+        margin-bottom: 25px;
+        font-size: 16px;
     }
 
 
